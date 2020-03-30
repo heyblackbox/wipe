@@ -1,0 +1,154 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	background-image: url('/images/bodybg.svg');
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+nav {
+	position: fixed;
+	max-width: 1280px;
+	width: 100%;
+}
+
+
+.navbar-header {
+	width: 100%;
+}
+
+.border {
+	border: solid 1px black;
+	border-collapse: collapse;
+}
+
+.navbar-wipe {
+	font-weight: 500;
+	background: none;
+	margin-bottom: 0.6em;
+	margin-top: 1.2em;
+	width: 100%;  
+  }
+  
+  .navbar-brand {
+	background-image: url('/images/logo.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 68px;
+	padding: 0;
+  }
+  
+  
+  .navbar a {
+	color: #303030;
+  }
+  
+  .navbar li {
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	padding: 0px;
+	display: inline-block !important;
+  }
+
+a.submitfilm {
+	border: 1px solid red;
+	margin-left: 15px;
+}
+
+a.submitfilm:hover {
+	border: 1px solid red;
+	background-color: red !important;
+	color: white;
+}
+
+div.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 20px;
+  }
+
+section.med {
+	width: 100%;
+	border: 1px solid black;
+}
+
+#reel {
+	background-color: #000;
+	text-align: center;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+div.title {
+	padding: 60px 20px 120px;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 52px;
+	line-height: 1.1;
+	margin-bottom: 24px;
+}
+
+.nextfest {
+	font-size: 24px;
+}
+
+.red {
+	color: red;
+}
+
+
+.mfs {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 120px;
+	border: solid 1px red;
+}
+.mfs p {
+	font-size: 36px;
+	line-height: 1.4;
+}
+
+
+/* Footer */
+
+div.footer {
+	background-color: #202020;
+	width: 100%;
+	min-height: 10em;
+	color: #606060;
+	font-size: 1em;
+	text-align: center;
+	padding: 3em 2em 2em 2em;
+  }
+  
+  .footer a, .footer a:visited {
+	text-decoration:none;
+	color: #606060;
+  }
+  
+  .footer a:hover {
+	text-decoration: none;
+	color: #888;
+  }
+
+ 
