@@ -9,6 +9,11 @@ p {
 	margin-bottom: 1em;
 }
 
+a {
+	text-decoration: underline;
+	color: red;
+}
+
 nav {
 	position: fixed;
 	max-width: 1280px;
@@ -108,11 +113,28 @@ h1 {
 	margin-bottom: 24px;
 }
 
+h2 {
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 1.4;
+	margin-bottom: 24px;
+}
+
 .nextfest {
 	font-size: 24px;
 }
 
 .red {
+	color: red;
+}
+
+.opencall {
+	font-size: 24px;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.opencall a {
 	color: red;
 }
 
@@ -123,10 +145,12 @@ h1 {
 	padding: 120px;
 	border: solid 1px red;
 }
+
 .mfs p {
 	font-size: 36px;
 	line-height: 1.4;
 }
+
 
 
 /* Footer */
