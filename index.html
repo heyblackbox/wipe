@@ -22,6 +22,36 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <link type='text/css' rel='stylesheet' href='/css/wipe.css' >
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <script>
+        $(function () { // wait for document ready
+            // init
+            var controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: 'onLeave',
+                    duration: "100%" // this works just fine with duration 0 as well
+                    // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+                    // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+                }
+            });
+    
+            // get all slides
+            var slides = document.querySelectorAll("div.container");
+    
+            // create scene for every slide
+            for (var i=0; i<slides.length; i++) {
+                new ScrollMagic.Scene({
+                        triggerElement: slides[i]
+                    })
+                    .setPin(slides[i], {pushFollowers: false})
+                    .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+            }
+        });
+    </script>
 </head>
 <body>
 
@@ -43,7 +73,7 @@
 
 <div class="container title">
     <h1>A laidback film festival in Berlin,<br/>where non-professional film creators<br/>meet their audience.</h1>
-    <p class="nextfest"><span class="red">Next date: </span>Berlin, Am Flutgraben, 30 &ndash; 31 October 2020</p>
+    <p class="nextfest"><span class="red">30 &ndash; 31 October 2020<br/>FLUTGRABEN e.V.,   Berlin</span></p>
 </div>
 
 <div class="container">
@@ -65,6 +95,24 @@
         </p>
     </div>
 </div>
+
+
+<div class="container reviews">
+
+    <div class="review review2">
+        <p><span class="text-large">Thank you so much for including my very first short movie</span> in WIPE amateur film festival in Berlin. I had a blast! Great communication, interesting venue, intriguing list of movies and an awesome possibility to meet new people. Thanks again and hopefully, see you next year!</p>
+        <p>Marta Aleksandra Przybysz<br/>Poland</p>
+    </div>
+    <div class="review review1">
+        <p><span class="text-large">Attending WIPE was an extremely positive experience for us as independent filmmakers.</span> Very few festivals of this nature exist. WIPE is put on for the right reasons: to share art, to have fun, to encourage creativity. I am thrilled that we were a part of it. We enjoyed the programming overall and met interesting, cool people from around the world. It was an all-around great time and worth the trip to Berlin.</p>
+        <p>Amy McCullough and Jimmie Buchanan Jr.<br/>USA</p>
+    </div>
+    <div class="review review3">
+        <p><span class="text-large">The people were very friendly and kind.</span> The space was very nice and chill. WIPE film festival is truly encouraging for all the amateur filmmakers and their great variety of films. Thank you very much for the wonderful weekend.</p>
+        <p>Anna Fujii</p>
+    </div>
+</div>
+
 
 <div class="container">
     <div class="opencall">

@@ -1,17 +1,22 @@
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	line-height: 24px;
+	line-height: 1.5em;
 	background-image: url('/images/bodybg.svg');
 }
 
 p {
 	margin-bottom: 1em;
+
 }
 
 a {
 	text-decoration: underline;
 	color: red;
+}
+
+.text-large {
+	font-size: 24px;
 }
 
 nav {
@@ -103,7 +108,7 @@ section.med {
 }
 
 div.title {
-	padding: 60px 20px 120px;
+	padding: 60px 20px 60px;
 }
 
 h1 {
@@ -121,7 +126,8 @@ h2 {
 }
 
 .nextfest {
-	font-size: 24px;
+	font-size: 32px;
+	line-height: 40px;
 }
 
 .red {
@@ -129,9 +135,11 @@ h2 {
 }
 
 .opencall {
+	padding: 20px;
 	font-size: 24px;
 	line-height: 1.4;
 	text-align: center;
+	border: 6px solid red;
 }
 
 .opencall a {
@@ -143,7 +151,7 @@ h2 {
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding: 120px;
-	border: solid 1px red;
+	border: solid 3px red;
 }
 
 .mfs p {
@@ -151,6 +159,19 @@ h2 {
 	line-height: 1.4;
 }
 
+.reviews {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+.review {
+	background: url('/images/rev.svg') no-repeat top left;
+	padding: 32px;
+	padding-top: 40px;
+	width: 33%;
+}
 
 
 /* Footer */
