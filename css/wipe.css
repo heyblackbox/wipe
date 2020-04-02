@@ -69,10 +69,25 @@ a.submitfilm {
 	margin-left: 15px;
 }
 
+a.submitlarge {
+	font-size: 32px;
+	display: inline-block;
+	border: 2px solid red;
+	padding: 20px 30px;
+	text-decoration: none;
+	color: black !important;
+	margin: 40px;
+}
+
+a.submitlarge:hover {
+	background-color: red !important;
+	color: white !important;
+}
+
 a.submitfilm:hover {
 	border: 1px solid red;
 	background-color: red !important;
-	color: white;
+	color: white !important; 
 }
 
 div.container {
@@ -139,11 +154,21 @@ h2 {
 	font-size: 24px;
 	line-height: 1.4;
 	text-align: center;
-	border: 6px solid red;
+	border: 4px dotted black;
 }
 
 .opencall a {
 	color: red;
+}
+
+.rules {
+	text-align:left;
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+ol li {
+	margin-bottom: 1em;
 }
 
 
@@ -177,13 +202,15 @@ h2 {
 /* Footer */
 
 div.footer {
+
 	background-color: #202020;
+
 	width: 100%;
 	min-height: 10em;
 	color: #606060;
 	font-size: 1em;
 	text-align: center;
-	padding: 3em 2em 2em 2em;
+	padding: 0 0 2em;
   }
   
   .footer a, .footer a:visited {
@@ -194,6 +221,32 @@ div.footer {
   .footer a:hover {
 	text-decoration: none;
 	color: #888;
+  }
+
+  .logobox {
+	background: #808080;
+	padding: 60px 0;
+  }
+
+  .logos {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	  align-items: stretch;
+	  justify-content: space-between;
+  }
+
+  .logo {
+	  padding: 20px;
+	  width: 33%;	
+  }
+
+  .stayamateur {
+	background-image: url('/images/tooth.svg');
+	background-repeat: repeat-x;
+	padding: 100px 0 60px;
+	margin: 0;
   }
 
  
