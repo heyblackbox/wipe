@@ -226,6 +226,7 @@ ol li {
 	font-size: 24px;
 	padding: 20px;
 	text-align: center;
+	border: 1px solid red;	
 }
 
 .links a:hover {
@@ -234,18 +235,6 @@ ol li {
 	text-decoration: none;
 }
 
-#link1 {
-	transform: rotate(-7deg);
-	margin-bottom: 40px;
-}
-
-#link2 {
-	transform: rotate(3deg);
-}
-
-#link3 {
-	transform: rotate(-6deg);
-}
 
 /* Form */
 
