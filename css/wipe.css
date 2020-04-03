@@ -4,7 +4,7 @@ html {
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 1.5em;
 	background-image: url('/images/bodybg.svg');
 }
@@ -73,19 +73,34 @@ a.submitfilm {
 	margin-left: 15px;
 }
 
-a.submitlarge {
-	font-size: 32px;
-	display: inline-block;
-	border: 2px solid red;
-	padding: 20px 30px;
+.blockbutton {
+	display: block;
+	padding: 20px;
+	text-align: center;
+	border: 1px solid #333;	
+	color: #333;
+}
+
+.blockbutton:hover {
+	border: 1px solid red;
+	background: red;
+	color: white;
 	text-decoration: none;
-	color: black !important;
-	margin: 40px;
+}
+
+a.submitlarge {
+	display: inline-block;
+	border: 1px solid #333;
+	padding: 16px 60px;
+	text-decoration: none;
+	color: #333 !important;
+	margin: 30px 40px 50px;
 }
 
 a.submitlarge:hover {
 	background-color: red !important;
 	color: white !important;
+	border: 1px solid red;
 }
 
 a.submitfilm:hover {
@@ -102,7 +117,7 @@ div.container {
 
 section.med {
 	width: 100%;
-	border: 1px solid black;
+	border: 1px solid #333;
 }
 
 #reel {
@@ -154,12 +169,35 @@ h2 {
 }
 
 .opencall {
-	padding: 40px 20px 20px 20px;
-	font-size: 24px;
+	padding: 60px 40px 40px 40px;
 	line-height: 1.4;
 	text-align: center;
-	border: 4px dotted black;
+	border: solid 1px red;	
+	position: relative;
+	
 }
+
+.opencall:before {
+	content: " ";
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	border: solid 2px red;
+	z-index: -1;
+  }
+
+  .opencall:after {
+	content: " ";
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	right: 40px;
+	bottom: 40px;
+	border: solid 3px red;
+	z-index: -2;
+  }
 
 .opencall a {
 	color: red;
@@ -180,11 +218,13 @@ ol li {
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding: 120px;
-	border: solid 3px red;
+	border: 4px dotted #333;
 }
 
+
+
 .mfs p {
-	font-size: 36px;
+	font-size: 30px;
 	line-height: 1.4;
 }
 
@@ -221,19 +261,9 @@ ol li {
 }
 
 .links a {
-	display: block;
 	margin: 20px;
-	font-size: 24px;
-	padding: 20px;
-	text-align: center;
-	border: 1px solid red;	
 }
 
-.links a:hover {
-	background-color: red;
-	color: white;
-	text-decoration: none;
-}
 
 
 /* Form */
@@ -244,18 +274,21 @@ form#c_form {
 
 input[type=text], input[type=email], textarea  {
 	font-size: 1em;
-	border: 2px solid red;
+	border: 1px solid red;
 	padding: 10px;
 	box-sizing: border-box;	
 	width: 100%;
 	margin-bottom: 20px;
 }
 
+input::placeholder, textarea::placeholder {
+	color: red;
+	opacity: 0.8;
+}
+
 
 input[type=submit] {
-	background: none;
-	border: 2px solid black;
-	padding: 10px 30px;
+	padding: 10px 50px;
 }
 
 
