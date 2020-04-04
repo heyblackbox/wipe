@@ -72,10 +72,12 @@ a.submitfilm {
 }
 
 .blockbutton {
+	box-sizing: border-box;
 	display: block;
 	padding: 20px;
 	text-align: center;
 	border: 1px solid #333;	
+	background: none;
 	color: #333;
 }
 
@@ -92,7 +94,7 @@ a.submitlarge {
 	padding: 16px 60px;
 	text-decoration: none;
 	color: #333 !important;
-	margin: 30px 40px 50px;
+	margin: 20px 0px 40px;
 }
 
 a.submitlarge:hover {
@@ -397,37 +399,14 @@ ul.nav { float:right !important; }
 	.title h1 {margin-top:0;}
 	p.nextfest {margin-bottom: 0; font-size: 24px; line-height: 1.4;}
 
-	.mfs {padding: 24px; font-size: 1.5em;}
-
-	.mfs { margin: 0px; padding: 20px; border: 2px dotted #333; }
-	.mfs p { font-size: 20px; line-height: initial;
-	}
-
-	.reviews { 
-		flex-direction: column;
-	}
+	.mfs {  font-size: 1.5em; margin: 0px; padding: 20px; border: 2px dotted #333; }
+	.mfs p { font-size: 20px; line-height: initial; }
+	.reviews { flex-direction: column;}
+	.review { padding: 40px 0px 20px 0px; width: 100%; }
+	.opencall { padding: 30px; }
+	.opencall:before { top: 5px; left: 5px; right: 5px; bottom: 5px; }
 	
-	.review {
-		padding: 40px 0px 20px 0px;
-		width: 100%;
-	}
-
-	.opencall {
-		padding: 30px;
-	}
-	
-	.opencall:before {
-		content: " ";
-		position: absolute;
-		top: 5px;
-		left: 5px;
-		right: 5px;
-		bottom: 5px;
-		border: solid 2px red;
-		z-index: -1;
-	  }
-	
-	  .opencall:after {
+	.opencall:after {
 		content: " ";
 		position: absolute;
 		top: 12px;
@@ -438,14 +417,29 @@ ul.nav { float:right !important; }
 		z-index: -2;
 	  }
 
+	ol.ruleslist {
+		list-style-type:none;
+		padding: 0;
+	}
+
+
 	.contacts {
 		flex-direction: column;
 	}
 	.form {width:100%;}
+	.blockbutton {
+		width: 100%;
+	}
 
-	.links {width: 100%;}
+	.links {width: 100%; padding: 0;}
+	.links a.blockbutton {width: auto;}
 	.logos {
 		flex-direction: column;
+	}
+
+	.logo {width: 100%;}
+	ul.nav {
+		display:none;
 	}
 
 	.visible-wide {display:none;}
