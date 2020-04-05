@@ -76,13 +76,13 @@ a.submitfilm {
 	display: block;
 	padding: 20px;
 	text-align: center;
-	border: 1px solid #333;	
+	border: 2px solid #333;	
 	background: none;
 	color: #333;
 }
 
 .blockbutton:hover {
-	border: 1px solid red;
+	border: 2px solid red;
 	background: red;
 	color: white;
 	text-decoration: none;
@@ -90,7 +90,6 @@ a.submitfilm {
 
 a.submitlarge {
 	display: inline-block;
-	border: 1px solid #333;
 	padding: 16px 60px;
 	text-decoration: none;
 	color: #333 !important;
@@ -98,9 +97,7 @@ a.submitlarge {
 }
 
 a.submitlarge:hover {
-	background-color: red !important;
 	color: white !important;
-	border: 1px solid red;
 }
 
 a.submitfilm:hover {
@@ -127,7 +124,7 @@ section.med {
 
 .video-container {
 	position:relative;
-	padding-bottom:56.25%;
+	padding-bottom:54.25%;
 	padding-top:30px;
 	height:0;
 	overflow:hidden;
@@ -376,6 +373,11 @@ ul.nav { float:right !important; }
 	.form {width:100%;}
 	.links {width: 100%;}
 	.logos { flex-direction: column; }
+	.logo {width: 100%;}
+	.visible-wide {display:none !important;}
+	ul.nav li a { display: none;}
+	ul.nav li a.submitfilm { display: inline-block;}
+
 }
 
 /* Landscape phones and smaller */
@@ -438,14 +440,9 @@ ul.nav { float:right !important; }
 	}
 
 	.logo {width: 100%;}
-	ul.nav {
-		display:none;
-	}
+	ul.nav { display:none; }
 
-	.visible-wide {display:none;}
-	div.title {
-		padding: 20px;
-	}
+	div.title { padding: 20px; }
 	
 }
 
