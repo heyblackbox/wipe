@@ -72,6 +72,13 @@ a.submitfilm {
 	margin-left: 15px;
 }
 
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+	background: rgba(0,0,0,0.10);
+}
+
+.visible-wide {z-index: 10;}
+
 .blockbutton {
 	box-sizing: border-box;
 	display: block;
@@ -93,18 +100,27 @@ a.submitlarge {
 	display: inline-block;
 	padding: 16px 60px;
 	text-decoration: none;
-	color: #333 !important;
 	margin: 20px 0px 40px;
+	color: #444 !important;
 }
 
 a.submitlarge:hover {
 	color: white !important;
+	background: red;
+}
+
+a.submitfilm {
+	line-height: 24px;
+	width: 180px;
+	z-index: 0;
 }
 
 a.submitfilm:hover {
-	border: 1px solid red;
+	border: none;
 	background-color: red !important;
+	background-image: none !important;
 	color: white !important; 
+	font-size: 1.02em;
 }
 
 div.container {
@@ -141,6 +157,8 @@ section.med {
 
 div.title {
 	padding: 60px 20px 60px;
+	position: relative;
+	z-index: 120;
 }
 
 h1 {
@@ -172,7 +190,8 @@ h2 {
 	text-align: center;
 	border: solid 1px red;	
 	position: relative;
-	
+	box-shadow: 200px 100px 400px 200px #FFF5ED;
+	z-index: 0;
 }
 
 .opencall:before {
@@ -216,7 +235,8 @@ ol li {
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding: 120px;
-	border: 4px dotted #333;
+	box-shadow: -200px -300px 1000px 200px #EDEFFF;
+	background: #FFF5ED;
 }
 
 
@@ -240,12 +260,16 @@ ol li {
 	width: 33%;
 }
 
+#contact {
+	position: relative;
+}
 
 .contacts {
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
 	justify-content: space-between;
+	
 }
 
 .form {
@@ -317,7 +341,7 @@ div.footer {
   }
 
   .logobox {
-	background: #808080;
+	background: #d2cecd;
 	padding: 60px 0;
   }
 
@@ -336,8 +360,6 @@ div.footer {
   }
 
   .stayamateur {
-	background-image: url('/images/tooth.svg');
-	background-repeat: repeat-x;
 	padding: 100px 0 60px;
 	margin: 0;
   }
